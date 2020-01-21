@@ -1,0 +1,36 @@
+fileFormatVersion: 2
+guid: c20f738662dc2c741ac57a1669847e13
+TrueTypeFontImporter:
+  externalObjects: {}
+  serializedVersion: 4
+  fontSize: 16
+  forceTextureCase: -2
+  characterSpacing: 0
+  characterPadding: 1
+  includeFontData: 1
+  fontName: SF Pro Display
+  fontNames:
+  - SF Pro Display
+  fallbackFontReferences:
+  - {fileID: 12800000, guid: 52fb4e43ae211fa4b9defda91febc769, type: 3}
+  - {fileID: 12800000, guid: 80975505c44741742903bc7f7dee4beb, type: 3}
+  - {fileID: 12800000, guid: 4795cd578b68af845a547c605effb923, type: 3}
+  - {fileID: 12800000, guid: 90d1f399946f8d74383a8da90c57ac08, type: 3}
+  - {fileID: 12800000, guid: 3d90b89a08526924ebd153397e7b66b7, type: 3}
+  - {fileID: 12800000, guid: 924c096b2a8f3984e8faa84d2781aa20, type: 3}
+  - {fileID: 12800000, guid: ba01d49b5f4b04d4a8470430d91b2242, type: 3}
+  - {fileID: 12800000, guid: 16cd21dbe2766d947820b52efcc01fba, type: 3}
+  - {fileID: 12800000, guid: a87ea64cdea08fa42ab425d603f53d86, type: 3}
+  - {fileID: 12800000, guid: a40519ccb4b3fd143aa3f24a50533ad7, type: 3}
+  - {fileID: 12800000, guid: 7baf7b3d71a5bfd4d8fc4969b7ab92bc, type: 3}
+  - {fileID: 12800000, guid: a24bbe9e3d40f2f41b068aef43c4f150, type: 3}
+  - {fileID: 12800000, guid: 79eb596ff24f75342a63137cedc7e277, type: 3}
+  - {fileID: 12800000, guid: 6ebc65ffee67ea942a16ca6a841b048c, type: 3}
+  customCharacters: 
+  fontRenderingMode: 0
+  ascentCalculationMode: 1
+  useLegacyBoundsCalculation: 0
+  shouldRoundAdvanceValue: 1
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
