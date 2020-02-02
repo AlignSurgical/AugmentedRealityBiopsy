@@ -22,14 +22,15 @@ public class HeadOperation : Head
                 GetComponent<MeshRenderer>().material = materialSkin;
 
             }
-            else if (operationOverlay.currentStyle == OperationOverlayStyle.mri)
-            {
-                GetComponent<MeshRenderer>().enabled = false;
-            }
-            else if (operationOverlay.currentStyle == OperationOverlayStyle.mesh)
+            else if (operationOverlay.currentStyle == OperationOverlayStyle.mesh
+            || operationOverlay.currentStyle == OperationOverlayStyle.compound)
             {
                 GetComponent<MeshRenderer>().enabled = true;
                 GetComponent<MeshRenderer>().material = materialInside;
+            }
+                else if (operationOverlay.currentStyle == OperationOverlayStyle.mri)
+            {
+                GetComponent<MeshRenderer>().enabled = false;
             }
 
             tumor.GetComponent<MeshRenderer>().enabled = true;

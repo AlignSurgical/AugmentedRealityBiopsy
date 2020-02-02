@@ -11,7 +11,7 @@ GameObject:
   - component: {fileID: 7089457575188331911}
   - component: {fileID: 1075076804449412299}
   m_Layer: 0
-  m_Name: AROverlay
+  m_Name: OperationOverlay
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -380,6 +380,16 @@ PrefabInstance:
       propertyPath: m_Name
       value: HeadOperation
       objectReference: {fileID: 0}
+    - target: {fileID: 5891951415640683958, guid: 72709c2e4b6c95945902044bfdcf911b,
+        type: 3}
+      propertyPath: overlay
+      value: 
+      objectReference: {fileID: 1075076804449412299}
+    - target: {fileID: 5891951415640683958, guid: 72709c2e4b6c95945902044bfdcf911b,
+        type: 3}
+      propertyPath: operationOverlay
+      value: 
+      objectReference: {fileID: 1075076804449412299}
     - target: {fileID: 4716836686881465666, guid: 72709c2e4b6c95945902044bfdcf911b,
         type: 3}
       propertyPath: m_LocalPosition.x
@@ -450,16 +460,6 @@ PrefabInstance:
       propertyPath: m_LocalScale.z
       value: 0.1
       objectReference: {fileID: 0}
-    - target: {fileID: 5891951415640683958, guid: 72709c2e4b6c95945902044bfdcf911b,
-        type: 3}
-      propertyPath: overlay
-      value: 
-      objectReference: {fileID: 1075076804449412299}
-    - target: {fileID: 5891951415640683958, guid: 72709c2e4b6c95945902044bfdcf911b,
-        type: 3}
-      propertyPath: operationOverlay
-      value: 
-      objectReference: {fileID: 1075076804449412299}
     - target: {fileID: 5576940288033632162, guid: 72709c2e4b6c95945902044bfdcf911b,
         type: 3}
       propertyPath: m_LocalScale.x

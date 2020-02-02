@@ -24,10 +24,15 @@ public class OperationOverlay : UIObject
 
     public bool IsVisible()
     {
-        return  Program.instance.startOverlay.launched
-        && Program.instance.patientID.approved
-        && Program.instance.planningOverlay.planned
-        && Program.instance.biopsyManager.currentPhase != BiopsyPhase.analyzing;
+        if(Program.instance.currentMode == ProgramMode.dissection)
+            return true;
+        else if(Program.instance.currentMode == ProgramMode.biopsy)
+            return  Program.instance.startOverlay.launched
+            && Program.instance.patientID.approved
+            && Program.instance.planningOverlay.planned
+            && Program.instance.biopsyManager.currentPhase != BiopsyPhase.analyzing;
+        else
+            return false;
     }
 
 
@@ -37,11 +42,14 @@ public class OperationOverlay : UIObject
         {
             base.UpdateInterface();
             enabled = true;
-            if (Program.instance.biopsyManager.biopsyTool.CloseToEntryPoint())
+
+            if (Program.instance.currentMode == ProgramMode.biopsy 
+            && Program.instance.biopsyManager.biopsyTool.CloseToEntryPoint())
             {
                 currentStyle = OperationOverlayStyle.mesh;
             }
-            else
+            else if(Program.instance.currentMode == ProgramMode.biopsy 
+            && !Program.instance.biopsyManager.biopsyTool.CloseToEntryPoint())
             {
                 currentStyle = OperationOverlayStyle.skinned;
             }

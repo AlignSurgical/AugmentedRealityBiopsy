@@ -2,9 +2,17 @@
 using System.Collections.Generic;
 using UnityEngine;
 
+public enum ProgramMode
+{
+    biopsy,
+    dissection
+}
+
 public class Program : MonoBehaviour
 {
     public static Program instance;
+
+    public ProgramMode currentMode;
     public ImportManager importManager;
     
     public InteractionManager interactionManager;
@@ -31,12 +39,24 @@ public class Program : MonoBehaviour
 
     public void Update()
     {
-        startOverlay.UpdateInterface();
-        operationOverlay.UpdateInterface();
-        patientID.UpdateInterface();
-        biopsyUI.UpdateInterface();
-        planningOverlay.UpdateInterface();
-        finalOverlay.UpdateInterface();
+        if(startOverlay)
+            startOverlay.UpdateInterface();
+
+        if(operationOverlay)
+            operationOverlay.UpdateInterface();
+
+        if(patientID)
+            patientID.UpdateInterface();
+
+        if(biopsyUI)
+            biopsyUI.UpdateInterface();
+
+        if(planningOverlay)
+            planningOverlay.UpdateInterface();
+
+        if(finalOverlay)
+            finalOverlay.UpdateInterface();
+
         // if(alphaSlider)
         //     alphaSlider.UpdateInterface();
     }

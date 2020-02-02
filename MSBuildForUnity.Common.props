@@ -2,8 +2,8 @@
   <PropertyGroup>
     <MSBuildForUnityVersion>0.8.3</MSBuildForUnityVersion>
     
-    <MSBuildForUnityGeneratedOutputDirectory>C:\Users\Luca\Documents\GitHub\AugmentedRealityBiopsy2\MSBuild\Projects</MSBuildForUnityGeneratedOutputDirectory>
-    <UnityProjectAssetsPath>C:\Users\Luca\Documents\GitHub\AugmentedRealityBiopsy2\Assets</UnityProjectAssetsPath>
+    <MSBuildForUnityGeneratedOutputDirectory>C:\Users\Luca\Documents\GitHub\AugmentedRealityBiopsy\MSBuild\Projects</MSBuildForUnityGeneratedOutputDirectory>
+    <UnityProjectAssetsPath>C:\Users\Luca\Documents\GitHub\AugmentedRealityBiopsy\Assets</UnityProjectAssetsPath>
     <MSBuildForUnityDefaultOutputPath>$(UnityProjectAssetsPath)\Dependencies</MSBuildForUnityDefaultOutputPath>
     
     <UnityCurrentPlatform>WindowsStandalone64</UnityCurrentPlatform>
