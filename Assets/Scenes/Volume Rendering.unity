@@ -10076,7 +10076,6 @@ MonoBehaviour:
   patientID: {fileID: 0}
   biopsyUI: {fileID: 0}
   planningOverlay: {fileID: 0}
-  volumeRenderedObject: {fileID: 0}
   operationOverlay: {fileID: 1075076804005102811}
   finalOverlay: {fileID: 0}
 --- !u!4 &695167771
@@ -14538,7 +14537,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1106977669}
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: 0, y: 0, z: 0.5}
+  m_LocalPosition: {x: 0, y: 0, z: 0.4}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children:
   - {fileID: 1413404708}
@@ -18413,6 +18412,7 @@ GameObject:
   m_Component:
   - component: {fileID: 1413404708}
   - component: {fileID: 1413404707}
+  - component: {fileID: 1413404709}
   m_Layer: 0
   m_Name: TransferFunctionUI
   m_TagString: Untagged
@@ -18442,14 +18442,26 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1413404706}
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: -0.3, y: 0, z: 0.5}
-  m_LocalScale: {x: 0.3, y: 0.3, z: 0.3}
+  m_LocalPosition: {x: -0.4, y: 0, z: 0.061}
+  m_LocalScale: {x: 0.2, y: 0.2, z: 0.2}
   m_Children:
   - {fileID: 394392976}
   - {fileID: 634642303}
   m_Father: {fileID: 1106977671}
   m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &1413404709
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1413404706}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: aa67a91e768538d459e81069d042fac9, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1 &1456262915
 GameObject:
   m_ObjectHideFlags: 0
@@ -27070,7 +27082,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!114 &1075076804005102811
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -27084,8 +27096,8 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   currentStyle: 1
-  head: {fileID: 5130244787544063716}
-  alpha: 0
+  volumeRenderedObject: {fileID: 0}
+  meshObject: {fileID: 5130244787544063716}
 --- !u!1 &1802434773987706842
 GameObject:
   m_ObjectHideFlags: 0
@@ -27201,6 +27213,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 1f251f1016010f54aa18604c73ce1850, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  alpha: 0
   materialInside: {fileID: 2100000, guid: 5d241aae6a682fc47a04227a6b1aa92a, type: 2}
   tumor: {fileID: 4765747031531054839}
   materialSkin: {fileID: 2100000, guid: 5b886771bb5bdd841b9d6c052ca11709, type: 2}
@@ -27212,14 +27225,14 @@ Transform:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 968896985588838301}
-  m_LocalRotation: {x: 0.9659259, y: -0, z: -0, w: -0.258819}
-  m_LocalPosition: {x: 0, y: 0, z: 0}
-  m_LocalScale: {x: 0.1, y: 0.1, z: 0.1}
+  m_LocalRotation: {x: -0.7071068, y: 0, z: 0, w: 0.7071068}
+  m_LocalPosition: {x: -0.0089, y: -0.034, z: -0.045}
+  m_LocalScale: {x: 0.15, y: 0.16, z: 0.15}
   m_Children:
   - {fileID: 6598729270725223664}
   m_Father: {fileID: 7089457575548804503}
   m_RootOrder: 0
-  m_LocalEulerAnglesHint: {x: -30, y: 180, z: 180}
+  m_LocalEulerAnglesHint: {x: -90, y: 0, z: 0}
 --- !u!33 &6322339989707287168
 MeshFilter:
   m_ObjectHideFlags: 0
@@ -27273,7 +27286,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1802434773987706842}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 0, y: 1.24, z: 1.2}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children:
   - {fileID: 6306078595565104656}

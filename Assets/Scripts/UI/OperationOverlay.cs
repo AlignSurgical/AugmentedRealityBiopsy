@@ -13,14 +13,8 @@ public enum OperationOverlayStyle
 public class OperationOverlay : UIObject
 {
     public OperationOverlayStyle currentStyle;
-    public HeadOperation head;
-    public float alpha;
-
-    public void SetAlpha(float newAlpha)
-    {
-        alpha = newAlpha;
-        head.materialInside.color = new Color(0.7f, 0.7f, 0.7f, alpha);
-    }
+    public VolumeRenderedObject volumeRenderedObject;
+    public MeshObject meshObject;
 
     public bool IsVisible()
     {

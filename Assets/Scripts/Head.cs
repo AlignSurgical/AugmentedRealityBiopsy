@@ -2,15 +2,15 @@
 using System.Collections.Generic;
 using UnityEngine;
 
-public abstract class Head : MonoBehaviour
+public abstract class Head : MeshObject
 {
     public Material materialInside;
 
     public Tumor tumor;
 
-    public virtual bool IsVisible()
+    public override void SetAlpha(float newAlpha)
     {
-        return false;
+        base.SetAlpha(newAlpha);
+        materialInside.color = new Color(0.7f, 0.7f, 0.7f, alpha);
     }
-    
 }

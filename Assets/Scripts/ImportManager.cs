@@ -36,7 +36,7 @@ public class ImportManager : MonoBehaviour
     public void Import()
     {
         dataset = CreateDataset();
-        Program.instance.volumeRenderedObject = CreateVolumeRenderedObject(dataset);
+        Program.instance.operationOverlay.volumeRenderedObject = CreateVolumeRenderedObject(dataset);
     }
 
 
@@ -103,8 +103,8 @@ public class ImportManager : MonoBehaviour
         GameObject go = GameObject.Instantiate(volumeObjectPrefab) as GameObject;
 
         go.transform.SetParent(Program.instance.operationOverlay.transform);
-        go.transform.localPosition = new Vector3(-0.0083f, 0.0426f, 0.0083f);
-        go.transform.rotation = Quaternion.Euler(-20f, 180f, 180f);
+        go.transform.localPosition = Vector3.zero;//new Vector3(-0.0083f, 0.0426f, 0.0083f);
+        //go.transform.rotation = Quaternion.Euler(-90f, 0, 0);
 
         VolumeRenderedObject volObj = go.GetComponent<VolumeRenderedObject>();
         MeshRenderer meshRenderer = go.GetComponent<MeshRenderer>();

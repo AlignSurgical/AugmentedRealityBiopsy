@@ -6,7 +6,6 @@ public class BiopsyTool : MonoBehaviour
 {
     public BiopsyManager manager;
     public LineRenderer rod;
-    public LineRenderer coloredTip;
 
     public Vector3 toolTip;
 
@@ -41,7 +40,7 @@ public class BiopsyTool : MonoBehaviour
     public float DistanceFromTumor()
     {
         return Vector3.Distance(
-            Program.instance.operationOverlay.head.tumor.transform.position,
+            (Program.instance.operationOverlay.meshObject as Head).tumor.transform.position,
             toolTip
         );
     }
@@ -120,24 +119,11 @@ public class BiopsyTool : MonoBehaviour
             rod.SetPosition(0, toolTip);
             rod.SetPosition(1, endOfTool);
 
-            float remainingDistance = Vector3.Distance(
-                Program.instance.operationOverlay.head.tumor.transform.position,
-                toolTip
-            );
-
-            coloredTip.positionCount = 2;
-            coloredTip.SetPosition(0, toolTip);
-            coloredTip.SetPosition(
-                1,
-                toolTip + -ToolVector() * remainingDistance // fakefinger
-            );
-
             this.transform.position = RightIndexFinger().transform.position;
         }
         else
         {
             rod.positionCount = 0;
-            coloredTip.positionCount = 0;
             toolTip = Vector3.zero;
         }
 

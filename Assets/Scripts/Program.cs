@@ -27,7 +27,6 @@ public class Program : MonoBehaviour
     public BiopsyUI biopsyUI;
     public PlanningOverlay planningOverlay;
     
-    public VolumeRenderedObject volumeRenderedObject;
     public OperationOverlay operationOverlay;
     public FinalOverlay finalOverlay;
 
