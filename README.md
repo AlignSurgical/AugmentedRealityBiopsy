@@ -1,4 +1,4 @@
-![Augmented Reality Biopsy](Documentation/cover.jpg)
+![Augmented Reality Biopsy](Documentation/cover1.jpg)
 
 # CLEAR - Augmented Reality Guided Biopsy for Microsoft HoloLens 2
 
@@ -11,6 +11,9 @@ Clear – Biopsy Guidance provides an augmented reality environment with the fol
 - Patient Safety: Patient identification and information
 - Surgical Planning and Review: Patient-specific radiological imaging and procedure planning information
 - AR guided Biopsy: The planned trajectory and radiological imaging for the brain biopsy directly overlayed onto the patient’s head
+
+
+![Augmented Reality Biopsy](Documentation/cover2.jpg)
 
 **How we built it**
 
