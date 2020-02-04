@@ -1,6 +1,7 @@
 ![Augmented Reality Biopsy](Documentation/cover1.jpg)
 
-# CLEAR - Augmented Reality Guided Biopsy for Microsoft HoloLens 2
+# CLEAR - Augmented Reality Guided Biopsy
+## Augmented Reality Surgical Navigation Tool for Microsoft HoloLens 2
 
 We are a team of clinicians, developers and designers dedicated to solving practical challenges in healthcare. The inspiration for the CLEAR Biopsy Guidance System was to use augmented reality to guide neurosurgical brain biopsy procedures. We envisioned a system that could improve patients’ outcomes and safety as well as physicians’ working experience.
 
@@ -11,7 +12,6 @@ Clear – Biopsy Guidance provides an augmented reality environment with the fol
 - Patient Safety: Patient identification and information
 - Surgical Planning and Review: Patient-specific radiological imaging and procedure planning information
 - AR guided Biopsy: The planned trajectory and radiological imaging for the brain biopsy directly overlayed onto the patient’s head
-
 
 ![Augmented Reality Biopsy](Documentation/cover2.jpg)
 
